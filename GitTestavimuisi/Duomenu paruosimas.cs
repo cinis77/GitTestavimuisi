@@ -17,7 +17,8 @@ namespace GitTestavimuisi
     interface IKomunikacija
     {
         void Siusti(string zinute);
-        string SkaitytiDuomenis();
+        string SkaitytiDuomenis { get; }
+
         void PakartotiPaskutineZinute();
     }
 
