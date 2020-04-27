@@ -12,4 +12,8 @@ namespace GitTestavimuisi
         {
         }
     }
+    public ClassNamePlaceholder()
+    {
+
+    }
 }

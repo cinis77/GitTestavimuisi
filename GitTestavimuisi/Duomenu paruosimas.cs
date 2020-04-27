@@ -35,4 +35,4 @@ namespace GitTestavimuisi
 
         void SiustiPaskutinDuomeni();
     }
-}
+}    
