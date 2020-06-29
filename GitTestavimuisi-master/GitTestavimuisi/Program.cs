@@ -69,6 +69,7 @@ namespace GitTestavimuisi
     {
         static void Main(string[] args)
         {
+         // Kazkoki labai svarbu pakeitima irasau cia
         }
     }
 }
