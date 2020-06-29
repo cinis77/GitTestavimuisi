@@ -1,0 +1,2 @@
+C:\Users\Juras Rabačauskas\Documents\GitHub\GitTestavimuisi\GitTestavimuisi-master\GitTestavimuisi\obj\Debug\GitTestavimuisi.csprojAssemblyReference.cache
+C:\Users\Juras Rabačauskas\Documents\GitHub\GitTestavimuisi\GitTestavimuisi-master\GitTestavimuisi\obj\Debug\GitTestavimuisi.csproj.CoreCompileInputs.cache
