@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GitTestavimuisi
 {
-    interface IDuomenys
+     interface IDuomenys
     {
         int Id { get; set; }
         string Zinute { get; set; }
@@ -25,6 +25,11 @@ namespace GitTestavimuisi
         public int Id { get; set; }
         public string Zinute { get; set; }
         DateTime DuomenuParuososLaikas { get; set; }
+    }
+
+    class A : IDuomenys
+    {
+        IDuomenys duomenai;
     }
 
     interface IKomunikacija
@@ -65,6 +70,9 @@ namespace GitTestavimuisi
         }
     }
 
+    class B : IKomunikacija
+    {}
+
     interface IDuomenu_paruosimas
     {
         List<IDuomenys> Data { get; }
@@ -79,93 +87,3 @@ namespace GitTestavimuisi
 
         void SiustiPaskutinDuomeni();
     }
-
-
-    class Data2: IDuomenu_paruosimas
-    {
-        public List<IDuomenys> Data { get; }
-
-        public string SukurtiDuomenuEilute(IDuomenys duomuo)
-        {
-            return "string";
-        }
-
-        public void PridetiDuomeni(IDuomenys duomuo)
-        {
-            Console.WriteLine("blahblahblah");
-        }
-
-        public void SiustiPirmaDuomeni()
-        {
-            Console.WriteLine("Issiustas");
-
-    
-
-
-
-    class Komun : IKomunikacija
-    {
-        public void PakartotiPaskutineZinute()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Siusti(string zinute)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string SkaitytiDuomenis()
-        {
-            throw new NotImplementedException();
-        }
-    }
-    class Duomen : IDuomenys
-    {
-        public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Zinute { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime DuomenuParuososLaikas { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-    }
-    class DuomenParuos : IDuomenu_paruosimas
-    {
-        public List<IDuomenys> Data => throw new NotImplementedException();
-
-        public void PridetiDuomeni(IDuomenys duomuo)
-        {
-            throw new NotImplementedException();
-
-        }
-
-        public void SiustiDuomeni(int kelintas)
-        {
-
-            Console.WriteLine("blahblah");
-        }
-
-        public void SiustiPaskutiniDuomeni()
-        {
-            Console.WriteLine("Blahblah");
-        }
-
-            throw new NotImplementedException();
-        }
-
-        public void SiustiPaskutinDuomeni()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SiustiPirmaDuomeni()
-        {
-            throw new NotImplementedException();
-        }
-
-        public string SukurtiDuomenuEilute(IDuomenys duomuo)
-        {
-            throw new NotImplementedException();
-            Console.WriteLine("sukurti");
-        }
-
-
-    }
-}
