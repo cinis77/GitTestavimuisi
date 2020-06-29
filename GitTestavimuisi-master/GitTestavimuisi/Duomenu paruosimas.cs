@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace GitTestavimuisi
 {
-    interface IDuomenys
+     interface IDuomenys
     {
         int Id { get; set; }
         string Zinute { get; set; }
         DateTime DuomenuParuososLaikas { get; set; }
 
+    }
+
+    class A : IDuomenys
+    {
+        IDuomenys duomenai;
     }
 
     interface IKomunikacija
@@ -20,6 +25,9 @@ namespace GitTestavimuisi
         string SkaitytiDuomenis();
         void PakartotiPaskutineZinute();
     }
+
+    class B : IKomunikacija
+    {}
 
     interface IDuomenu_paruosimas
     {
@@ -35,4 +43,7 @@ namespace GitTestavimuisi
 
         void SiustiPaskutinDuomeni();
     }
+
+    class C : IDuomenu_paruosimas
+    {}
 }
