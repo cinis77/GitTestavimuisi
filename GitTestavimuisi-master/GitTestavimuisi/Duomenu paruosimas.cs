@@ -35,4 +35,58 @@ namespace GitTestavimuisi
 
         void SiustiPaskutinDuomeni();
     }
+
+    class Komun : IKomunikacija
+    {
+        public void PakartotiPaskutineZinute()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Siusti(string zinute)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string SkaitytiDuomenis()
+        {
+            throw new NotImplementedException();
+        }
+    }
+    class Duomen : IDuomenys
+    {
+        public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Zinute { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public DateTime DuomenuParuososLaikas { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    }
+    class DuomenParuos : IDuomenu_paruosimas
+    {
+        public List<IDuomenys> Data => throw new NotImplementedException();
+
+        public void PridetiDuomeni(IDuomenys duomuo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SiustiDuomeni(int kelintas)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SiustiPaskutinDuomeni()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SiustiPirmaDuomeni()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string SukurtiDuomenuEilute(IDuomenys duomuo)
+        {
+            throw new NotImplementedException();
+            Console.WriteLine("sukurti");
+        }
+    }
 }
