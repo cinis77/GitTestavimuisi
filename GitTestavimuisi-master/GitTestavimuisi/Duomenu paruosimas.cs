@@ -86,6 +86,7 @@ namespace GitTestavimuisi
         public string SukurtiDuomenuEilute(IDuomenys duomuo)
         {
             throw new NotImplementedException();
+            Console.WriteLine("sukurti");
         }
     }
 }
