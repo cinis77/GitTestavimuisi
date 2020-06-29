@@ -6,31 +6,20 @@ using System.Threading.Tasks;
 
 namespace GitTestavimuisi
 {
-     interface IDuomenys
+    interface IDuomenys
     {
         int Id { get; set; }
         string Zinute { get; set; }
         DateTime DuomenuParuososLaikas { get; set; }
 
     }
-    class Duomenys: IDuomenys
-    {
-    int Id {get; set;}
-    string Zinute { ger;set;}
-    DateTime DuomenuParuosimasLaikas {get;set;}
-    
 
-    class Data : IDuomenys
-    {
-        public int Id { get; set; }
-        public string Zinute { get; set; }
-        DateTime DuomenuParuososLaikas { get; set; }
-    }
 
-    class A : IDuomenys
-    {
-        IDuomenys duomenai;
-    }
+
+
+
+
+
 
     interface IKomunikacija
     {
@@ -38,19 +27,7 @@ namespace GitTestavimuisi
         string SkaitytiDuomenis();
         void PakartotiPaskutineZinute();
     }
-    class Komunikacija : IKomunikacija
-    {
-    public void PakartotiPaskutineZinute()
-    {
-    }
-    public void Siusti (string zinute)
-    {
-    }
-    public string SkaitytiDuomenis()
-    {
-    return "a";
-    }
-    }
+
 
     class Communication : IKomunikacija
     {
@@ -70,8 +47,7 @@ namespace GitTestavimuisi
         }
     }
 
-    class B : IKomunikacija
-    {}
+
 
     interface IDuomenu_paruosimas
     {
@@ -87,3 +63,4 @@ namespace GitTestavimuisi
 
         void SiustiPaskutinDuomeni();
     }
+}
