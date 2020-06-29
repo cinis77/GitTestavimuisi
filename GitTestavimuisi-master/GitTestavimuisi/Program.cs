@@ -15,6 +15,11 @@ namespace GitTestavimuisi
 
     class Komunikacija : IKomunikacija
     {
+        public Komunikacija()
+        {
+            Console.WriteLine("Sveiki");
+        }
+
         public void PakartotiPaskutineZinute()
         {
             

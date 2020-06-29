@@ -35,4 +35,6 @@ namespace GitTestavimuisi
 
         void SiustiPaskutinDuomeni();
     }
+
+    class Komunikacija : IKomunikacija
 }
