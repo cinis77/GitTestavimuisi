@@ -17,12 +17,12 @@ namespace GitTestavimuisi
     {
         public void PakartotiPaskutineZinute()
         {
-            
+            Console.WriteLine("Kartoju");
         }
 
         public void Siusti(string zinute)
         {
-         
+            Console.WriteLine(zinute);
         }
 
         public string SkaitytiDuomenis()
@@ -39,22 +39,22 @@ namespace GitTestavimuisi
 
         public void PridetiDuomeni(IDuomenys duomuo)
         {
-            
+            Data.Add(duomuo);
         }
 
         public void SiustiDuomeni(int kelintas)
         {
-            
+            kelintas++;
         }
 
         public void SiustiPaskutinDuomeni()
         {
-            
+            Console.WriteLine("siunciu paskutini");
         }
 
         public void SiustiPirmaDuomeni()
         {
-            
+            Console.WriteLine("siusti pirma");
         }
 
         public string SukurtiDuomenuEilute(IDuomenys duomuo)
