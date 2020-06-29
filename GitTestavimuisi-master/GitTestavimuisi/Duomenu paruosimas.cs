@@ -36,6 +36,7 @@ namespace GitTestavimuisi
         void SiustiPaskutinDuomeni();
     }
 
+
     class Komun : IKomunikacija
     {
         public void PakartotiPaskutineZinute()
