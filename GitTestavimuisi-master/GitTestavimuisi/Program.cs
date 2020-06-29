@@ -15,25 +15,34 @@ namespace GitTestavimuisi
 
     class Komunikacija : IKomunikacija
     {
+
         public Komunikacija()
         {
             Console.WriteLine("Sveiki");
         }
 
+
+        public string Msg { get; set; }
+
         public void PakartotiPaskutineZinute()
         {
-            
+            Console.WriteLine(Msg);
         }
 
         public void Siusti(string zinute)
         {
-         
+
+            LastMsg = zinute;
+            Console.WriteLine(zinute);
         }
 
         public string SkaitytiDuomenis()
         {
 
-            return "duomenys";
+            Console.WriteLine("Enter msg");
+            Msg = Console.ReadLine();
+            return Msg;
+
 
         }
     }
@@ -44,22 +53,22 @@ namespace GitTestavimuisi
 
         public void PridetiDuomeni(IDuomenys duomuo)
         {
-            
+            Data.Add(duomuo);
         }
 
         public void SiustiDuomeni(int kelintas)
         {
-            
+            Console.WriteLine(Data[kelintas]);
         }
 
         public void SiustiPaskutinDuomeni()
         {
-            
+            Console.WriteLine(Data[Data.Count()]);
         }
 
         public void SiustiPirmaDuomeni()
         {
-            
+            Console.WriteLine(Data[0]);
         }
 
         public string SukurtiDuomenuEilute(IDuomenys duomuo)
@@ -73,7 +82,8 @@ namespace GitTestavimuisi
     class Program
     {
         static void Main(string[] args)
-        {
+        {           
+
         }
     }
 }
