@@ -1,0 +1,7 @@
+D:\Stuff\Csharp kursai\Cs-uzduotys\GitTestavimuisi\GitTestavimuisi-master\GitTestavimuisi\bin\Debug\GitTestavimuisi.exe.config
+D:\Stuff\Csharp kursai\Cs-uzduotys\GitTestavimuisi\GitTestavimuisi-master\GitTestavimuisi\bin\Debug\GitTestavimuisi.exe
+D:\Stuff\Csharp kursai\Cs-uzduotys\GitTestavimuisi\GitTestavimuisi-master\GitTestavimuisi\bin\Debug\GitTestavimuisi.pdb
+D:\Stuff\Csharp kursai\Cs-uzduotys\GitTestavimuisi\GitTestavimuisi-master\GitTestavimuisi\obj\Debug\GitTestavimuisi.csprojAssemblyReference.cache
+D:\Stuff\Csharp kursai\Cs-uzduotys\GitTestavimuisi\GitTestavimuisi-master\GitTestavimuisi\obj\Debug\GitTestavimuisi.csproj.CoreCompileInputs.cache
+D:\Stuff\Csharp kursai\Cs-uzduotys\GitTestavimuisi\GitTestavimuisi-master\GitTestavimuisi\obj\Debug\GitTestavimuisi.exe
+D:\Stuff\Csharp kursai\Cs-uzduotys\GitTestavimuisi\GitTestavimuisi-master\GitTestavimuisi\obj\Debug\GitTestavimuisi.pdb
