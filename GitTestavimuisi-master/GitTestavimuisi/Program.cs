@@ -23,14 +23,18 @@ namespace GitTestavimuisi
 
         public void Siusti(string zinute)
         {
+
+            LastMsg = zinute;
             Console.WriteLine(zinute);
         }
 
         public string SkaitytiDuomenis()
         {
+
             Console.WriteLine("Enter msg");
             Msg = Console.ReadLine();
             return Msg;
+
 
         }
     }
@@ -70,7 +74,8 @@ namespace GitTestavimuisi
     class Program
     {
         static void Main(string[] args)
-        {
+        {           
+
         }
     }
 }
