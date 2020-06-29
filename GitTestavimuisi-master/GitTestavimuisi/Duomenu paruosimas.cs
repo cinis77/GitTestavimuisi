@@ -13,6 +13,19 @@ namespace GitTestavimuisi
         DateTime DuomenuParuososLaikas { get; set; }
 
     }
+    class Duomenys: IDuomenys
+    {
+    int Id {get; set;}
+    string Zinute { ger;set;}
+    DateTime DuomenuParuosimasLaikas {get;set;}
+    
+
+    class Data : IDuomenys
+    {
+        public int Id { get; set; }
+        public string Zinute { get; set; }
+        DateTime DuomenuParuososLaikas { get; set; }
+    }
 
     class A : IDuomenys
     {
@@ -24,6 +37,37 @@ namespace GitTestavimuisi
         void Siusti(string zinute);
         string SkaitytiDuomenis();
         void PakartotiPaskutineZinute();
+    }
+    class Komunikacija : IKomunikacija
+    {
+    public void PakartotiPaskutineZinute()
+    {
+    }
+    public void Siusti (string zinute)
+    {
+    }
+    public string SkaitytiDuomenis()
+    {
+    return "a";
+    }
+    }
+
+    class Communication : IKomunikacija
+    {
+        public void Siusti(string zinute)
+        {
+            Console.WriteLine(zinute);
+        }
+
+        public string SkaitytiDuomenis()
+        {
+            return "string";
+        }
+
+        public void PakartotiPaskutineZinute()
+        {
+            Console.WriteLine("Paskutine zinute");
+        }
     }
 
     class B : IKomunikacija
@@ -43,7 +87,3 @@ namespace GitTestavimuisi
 
         void SiustiPaskutinDuomeni();
     }
-
-    class C : IDuomenu_paruosimas
-    {}
-}
